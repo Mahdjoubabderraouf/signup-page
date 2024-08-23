@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="logo-container">
+                <img src="./assets/odin.png" alt="odin_img">
+                <h1>ODIN</h1>
+            </div>
+        </section>
+        <section>
+            <div class="para-container">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you
+                    realize
+                    your
+                    deepest dreams. Sign up now to get started.
+                </p>
+                <p>You know you want to.</p>
+            </div>
+            <form>
+                <div class="signup-container">
+                    <legend>Let's do this!</legend>
+
+                    <div class="signup">
+
+                        <div class="input-container">
+                            <label for="first name">FIRST NAME</label>
+                            <input type="text" name="first name" pattern="[A-Za-z]{3,20}" placeholder="Thor" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="last name">LAST NAME</label>
+                            <input type="text" name="last name" pattern="[A-Za-z]{3,20}" placeholder="Odinson" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="phone number">PHONE NUMBER</label>
+                            <input type="tel" name="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="123-456-7890" required>
+                        </div>
+
+                        <div class="input-container pass">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                placeholder="password" required>
+                        </div>
+
+                        <div class="input-container pass">
+                            <label for="confirm password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm password" placeholder="password" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Creat Account</button>
+            </form>
+            <p>Already have an account? <a href="#login">Log in</a></p>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>

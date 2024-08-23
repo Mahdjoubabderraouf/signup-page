@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./Norse-Bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 63.5rem;
+  margin-inline: auto;
+  height: 100vh;
+  display: flex;
+}
+
+section:has(> .logo-container) {
+  height: 100%;
+  width: 60%;
+  background: url(./assets/image.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-family: Norse-Bold, sans-serif;
+}
+
+.logo-container {
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.473);
+  img {
+    width: 20%;
+  }
+}
+
+section:has(> form) {
+  background-color: #fafafa;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .para-container {
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  form {
+    margin: 1rem 0rem;
+    button {
+      background: #000;
+      border: none;
+      color: #fff;
+      margin: 1rem;
+      font-size: 1rem;
+      padding: 0.6em 2em;
+      border-radius: 0.4em;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.425);
+    }
+  }
+}
+
+.signup-container {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.425);
+  border-radius: 0.5rem;
+}
+
+.signup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  font-size: 0.75rem;
+  width: calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  margin-left: 0rem;
+}
+
+input {
+  margin-top: 0.2rem;
+  padding: 0.45rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.2rem;
+  outline: none;
+}
+input:focus {
+  border: 1px solid;
+}
+
+input:valid {
+  border: rgb(5, 179, 5) solid 1px;
+  background: rgb(220, 255, 220);
+}
+input:invalid {
+  border: rgb(255, 42, 42) solid 1px;
+  background: rgb(255, 211, 211);
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 600;
+}
