@@ -128,3 +128,6 @@ a {
   text-decoration: none;
   font-weight: 600;
 }
+label{
+  letter-spacing: 1px;
+}
